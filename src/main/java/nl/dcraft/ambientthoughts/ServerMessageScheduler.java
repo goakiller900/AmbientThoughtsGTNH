@@ -78,30 +78,11 @@ public class ServerMessageScheduler {
         }
 
         EntityPlayerMP targetPlayer = eligiblePlayers.get(random.nextInt(eligiblePlayers.size()));
-        PlayerContext context = activityDetector.detect(targetPlayer);
+        sendTimedMessageToPlayer(targetPlayer);
+    }
 
-        TemplateSelection selection = selectTemplate(context);
-        if (selection.template == null || selection.template.isEmpty()) {
-            AmbientThoughts.LOG.warn("Ambient Thoughts could not find a message template to send.");
-            return;
-        }
-
-        rememberTemplate(context.getPlayerName(), selection.template);
-
-        String formattedMessage = messageFormatter.format(selection.template, context);
-        targetPlayer.addChatMessage(new ChatComponentText(Config.messagePrefix + " " + formattedMessage));
-
-        lastMessageTickByPlayer.put(context.getPlayerName(), Long.valueOf(totalServerTicks));
-
-        AmbientThoughts.LOG.info(
-            "Ambient Thoughts sent " + selection.source
-                + " message to "
-                + context.getPlayerName()
-                + " in biome "
-                + context.getBiomeName()
-                + " with activity "
-                + context.getActivityName()
-                + ".");
+    public boolean sendManualMessageToPlayer(EntityPlayerMP targetPlayer) {
+        return sendMessageToPlayer(targetPlayer, false, "manual");
     }
 
     public void reloadMessages() {
@@ -109,6 +90,47 @@ public class ServerMessageScheduler {
         messageLoader.load();
         scheduleNextMessage();
         AmbientThoughts.LOG.info("Ambient Thoughts messages reloaded.");
+    }
+
+    private boolean sendTimedMessageToPlayer(EntityPlayerMP targetPlayer) {
+        return sendMessageToPlayer(targetPlayer, true, "timed");
+    }
+
+    private boolean sendMessageToPlayer(EntityPlayerMP targetPlayer, boolean applyCooldown, String sourceLabel) {
+        if (targetPlayer == null) {
+            return false;
+        }
+
+        PlayerContext context = activityDetector.detect(targetPlayer);
+
+        TemplateSelection selection = selectTemplate(context);
+        if (selection.template == null || selection.template.isEmpty()) {
+            AmbientThoughts.LOG.warn("Ambient Thoughts could not find a message template to send.");
+            return false;
+        }
+
+        rememberTemplate(context.getPlayerName(), selection.template);
+
+        String formattedMessage = messageFormatter.format(selection.template, context);
+        targetPlayer.addChatMessage(new ChatComponentText(Config.messagePrefix + " " + formattedMessage));
+
+        if (applyCooldown) {
+            lastMessageTickByPlayer.put(context.getPlayerName(), Long.valueOf(totalServerTicks));
+        }
+
+        AmbientThoughts.LOG.info(
+            "Ambient Thoughts sent " + sourceLabel
+                + " "
+                + selection.source
+                + " message to "
+                + context.getPlayerName()
+                + " in biome "
+                + context.getBiomeName()
+                + " with activity "
+                + context.getActivityName()
+                + ".");
+
+        return true;
     }
 
     private void scheduleNextMessage() {

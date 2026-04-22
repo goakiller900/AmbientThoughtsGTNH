@@ -1,5 +1,7 @@
 package nl.dcraft.ambientthoughts;
 
+import net.minecraft.entity.player.EntityPlayerMP;
+
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -38,7 +40,9 @@ public class CommonProxy {
 
     public void serverStarting(FMLServerStartingEvent event) {
         event.registerServerCommand(new ReloadMessagesCommand());
+        event.registerServerCommand(new SendMessageCommand());
         AmbientThoughts.LOG.info("Ambient Thoughts reload command registered");
+        AmbientThoughts.LOG.info("Ambient Thoughts send-message command registered");
     }
 
     public void reloadMessages() {
@@ -49,5 +53,13 @@ public class CommonProxy {
         if (joinMessageHandler != null) {
             joinMessageHandler.reloadMessages();
         }
+    }
+
+    public boolean sendManualMessageToPlayer(EntityPlayerMP player) {
+        if (serverMessageScheduler == null || player == null) {
+            return false;
+        }
+
+        return serverMessageScheduler.sendManualMessageToPlayer(player);
     }
 }
