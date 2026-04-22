@@ -1,0 +1,110 @@
+{
+  "join_messages": [
+    "Hi {player}, welcome back to {dimension}.",
+    "Hey {player}, good to see you again in {biome}.",
+    "{player} joined. Current status: {activity}.",
+    "Hi {player}, welcome back. {machine} is probably waiting for you.",
+    "Hey {player}, good to see you again. Enjoy {biome}."
+  ],
+  "wholesome": [
+    "Hi {player}, hope {biome} is treating you decently today.",
+    "Hey {player}, keep going. Even {activity} still counts as progress.",
+    "Hi {player}, the world feels a little better with you in {dimension}.",
+    "{player}, even messy progress is still progress.",
+    "Hey {player}, glad you're here."
+  ],
+  "shower_thoughts": [
+    "{player}, if torches burn forever, what exactly are we feeding them?",
+    "Hey {player}, if skeletons use bows, who taught them archery?",
+    "Hi {player}, are mineshafts abandoned or just permanently understaffed?",
+    "{player}, if villagers gossip all day, are they technically a wireless network?",
+    "Hey {player}, what if cobblestone is just emotionally damaged stone?",
+    "{player}, if {machine} can exist in {biome}, maybe the laws of nature already gave up.",
+    "Hey {player}, is {activity} still a hobby once it requires this much infrastructure?"
+  ],
+  "chaotic": [
+    "Hi {player}. Please continue behaving normally.",
+    "{player}, the server is definitely not judging your storage system.",
+    "Hey {player}, your current plan seems questionable, which is promising.",
+    "Hi {player}, this feels like one of those decisions you'll explain later.",
+    "{player}, if it explodes, call it a redesign.",
+    "Hi {player}, you appear to be {activity} near {machine}. Bold.",
+    "Hey {player}, doing {activity} in {dimension} sounds like a choice you'll explain later."
+  ],
+  "creepy": [
+    "Hi {player}. I noticed.",
+    "Hey {player}, the world has been aware of your presence for some time.",
+    "{player}, the silence out here feels very observant today.",
+    "Hi {player}, nothing is wrong. Probably.",
+    "Hey {player}, you ever get the feeling the cave is listening back?",
+    "{player}, {machine} in {dimension} feels strangely aware today."
+  ],
+  "gtnh_wholesome": [
+    "Hi {player}, every expert once started with a flint tool and confusion.",
+    "Hey {player}, GTNH progress is still progress, even when it takes three machines too many.",
+    "{player}, one machine at a time. One meltdown at a time.",
+    "Hi {player}, even bronze age feels big when you've earned it.",
+    "Hey {player}, may your machines run and your cables remain unmelted.",
+    "Hi {player}, {activity} in {dimension} is still progress.",
+    "Hey {player}, may {machine} behave itself today."
+  ],
+  "gtnh_shower_thoughts": [
+    "{player}, if progress requires ten machines to make one machine, is that advancement or ritual?",
+    "Hey {player}, at what point does ore processing become a religion?",
+    "Hi {player}, if every ingot takes five steps, are we refining metal or ourselves?",
+    "{player}, if you automate suffering, does it still count as suffering?",
+    "Hey {player}, are cables technology or just expensive trust exercises?",
+    "{player}, if {machine} needs five subcomponents, is it still a machine or a cry for help?"
+  ],
+  "gtnh_chaotic": [
+    "Hi {player}, this base appears to be held together by cables and optimism.",
+    "Hey {player}, one more machine will absolutely solve the machine problem.",
+    "{player}, your setup looks unsafe in a very authentic GTNH way.",
+    "Hi {player}, if it explodes, that was just voltage-based feedback.",
+    "Hey {player}, the factory yearns for more infrastructure.",
+    "Hi {player}, {activity} near {machine} is exactly how GTNH teaches lessons.",
+    "Hey {player}, somehow {machine} in {biome} still looks too ambitious."
+  ],
+  "activity_mining": [
+    "Hi {player}, still mining in {biome}?",
+    "Hey {player}, how is mining in {dimension} going?",
+    "{player}, mining near {machine} feels very on-brand.",
+    "Hi {player}, I hope the next vein in {biome} is worth it.",
+    "Hey {player}, {activity} with {item} in hand sounds productive."
+  ],
+  "activity_building": [
+    "Hi {player}, building in {biome} again?",
+    "Hey {player}, that build in {dimension} is starting to look real.",
+    "{player}, building near {machine} is a bold aesthetic choice.",
+    "Hi {player}, one block at a time still counts.",
+    "Hey {player}, {activity} in {biome} has good energy."
+  ],
+  "activity_farming": [
+    "Hi {player}, farming in {biome} has its own charm.",
+    "Hey {player}, how is the whole {activity} situation going?",
+    "{player}, peaceful farming in {dimension} sounds nice.",
+    "Hi {player}, somebody has to keep civilization running.",
+    "Hey {player}, {item} and {activity} is a calmer kind of progress."
+  ],
+  "activity_exploring": [
+    "Hi {player}, still exploring {dimension}?",
+    "Hey {player}, I hope {biome} has something worth finding.",
+    "{player}, {activity} again? Respect.",
+    "Hi {player}, wandering through {biome} still counts as content.",
+    "Hey {player}, maybe {dimension} finally has what you're looking for."
+  ],
+  "activity_combat": [
+    "Hi {player}, fighting for your life in {dimension} again?",
+    "Hey {player}, combat in {biome} seems lively today.",
+    "{player}, try not to die near {machine}. It would be embarrassing.",
+    "Hi {player}, {activity} with {item} sounds intense.",
+    "Hey {player}, please continue winning your current argument with nature."
+  ],
+  "activity_chest_sorting": [
+    "Hi {player}, organizing chests again?",
+    "Hey {player}, storage management is the real endgame.",
+    "{player}, {activity} near {machine} sounds painfully productive.",
+    "Hi {player}, one chest at a time.",
+    "Hey {player}, your future self may actually thank you for this."
+  ]
+}

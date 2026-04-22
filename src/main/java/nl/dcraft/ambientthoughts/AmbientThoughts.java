@@ -8,13 +8,13 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = AmbientThoughts.MODID, name = AmbientThoughts.MODNAME, version = AmbientThoughts.VERSION)
+@Mod(modid = AmbientThoughts.MODID, name = AmbientThoughts.MODNAME, version = Tags.VERSION)
 public class AmbientThoughts {
 
     public static final String MODID = "ambientthoughts";
     public static final String MODNAME = "Ambient Thoughts";
-    public static final String VERSION = "1.0.0";
 
     @Mod.Instance(MODID)
     public static AmbientThoughts instance;
@@ -43,5 +43,10 @@ public class AmbientThoughts {
     public void postInit(FMLPostInitializationEvent event) {
         LOG.info("Ambient Thoughts postInit");
         proxy.postInit(event);
+    }
+
+    @Mod.EventHandler
+    public void serverStarting(FMLServerStartingEvent event) {
+        proxy.serverStarting(event);
     }
 }
