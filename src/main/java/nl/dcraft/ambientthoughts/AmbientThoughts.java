@@ -10,7 +10,11 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = AmbientThoughts.MODID, name = AmbientThoughts.MODNAME, version = Tags.VERSION)
+@Mod(
+    modid = AmbientThoughts.MODID,
+    name = AmbientThoughts.MODNAME,
+    version = Tags.VERSION,
+    acceptableRemoteVersions = "*")
 public class AmbientThoughts {
 
     public static final String MODID = "ambientthoughts";
