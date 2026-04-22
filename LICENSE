@@ -1,21 +1,35 @@
-MIT License
+Ambient Thoughts Non-Commercial License v1.0
 
-Copyright (c) 2021 Johann Bernhardt
+Copyright (c) 2026 Remco Kappers
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to use, copy, modify, and distribute the Software, in source or compiled form, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. The above copyright notice and this permission notice must be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. If you distribute a modified version of the Software, you must clearly state that you changed it.
+
+3. You may use, run, modify, and distribute the Software for:
+   - personal use;
+   - private servers;
+   - friend groups;
+   - community servers;
+   - testing;
+   - educational purposes;
+   - non-commercial modpacks or non-commercial server setups.
+
+4. You may not use, run, host, distribute, sublicense, sell, license, monetize, or otherwise exploit the Software for commercial purposes without prior written permission from the copyright holder.
+
+5. For the purposes of this license, “commercial purposes” includes, but is not limited to:
+   - charging money for access to a server that uses the Software;
+   - accepting payment for ranks, kits, items, perks, commands, reserved slots, priority queues, or any other in-game or server-related benefit on a server that uses the Software;
+   - accepting donations, subscriptions, memberships, or similar payments if they provide any gameplay advantage, access benefit, status benefit, convenience benefit, or exclusive content on a server that uses the Software;
+   - bundling the Software with paid server hosting, managed hosting, commercial modpacks, or paid services;
+   - using the Software in any way primarily intended for monetary compensation, commercial advantage, or revenue generation.
+
+6. Donations are only permitted if they are genuinely optional and provide no direct or indirect in-game benefit, no access benefit, no progression benefit, no cosmetic status benefit tied to exclusivity, and no other preferential treatment.
+
+7. Running the Software on a server that is funded through monetization described in section 5 is prohibited without prior written permission from the copyright holder.
+
+8. Any rights not expressly granted by this license are reserved.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
